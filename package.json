@@ -1,0 +1,55 @@
+{
+  "name": "stencil-apexcharts",
+  "version": "2.1.1",
+  "description": "Stencil Component for ApexCharts",
+  "author": {
+    "name": "Mikael Karon",
+    "email": "mikael@karon.se",
+    "url": "https://mikael.karon.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apexcharts/stencil-apexcharts.git"
+  },
+  "keywords": [
+    "apexcharts",
+    "stencil",
+    "charts",
+    "data-visualization",
+    "web components"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "unpkg": "dist/stencil-apexcharts/apex.js",
+  "collection:main": "dist/collection/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "release": "standard-version"
+  },
+  "peerDependencies": {
+    "apexcharts": "^3.10.0"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.7.3",
+    "standard-version": "^7.0.0"
+  },
+  "license": "MIT",
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run build"
+    }
+  },
+  "dependencies": {
+    "apexcharts": "^3.19.3"
+  }
+}
